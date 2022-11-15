@@ -56,9 +56,8 @@ def save():
             website_entry.delete(0, END)
             password_entry.delete(0, END)
 
+# ------------------Searching for password-------------------------------#
 
-
-# ---------------------------- UI SETUP ------------------------------- #
 def find_password():
     website = website_entry.get()
     try:
@@ -76,6 +75,10 @@ def find_password():
         else: 
             messagebox.showinfo(title="Error", message=f"No details for {website} exist")
 
+            
+
+# ---------------------------- UI SETUP ------------------------------- #            
+            
 window = Tk()
 window.title("Password Boss")
 window.config(padx=50, pady=50)
